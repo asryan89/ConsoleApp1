@@ -41,7 +41,7 @@ namespace ConsoleApp1
                       Start++;
                     }
               }
-          fgfdfddfgdfg
+        
           using (StreamWriter streamWriter = new StreamWriter("result.txt", true))
             streamWriter.WriteLine(File.ReadLines("in.txt").Skip(Lines_count - 1).Take(1).First());
             Console.WriteLine("Enter the value for search or exit to end program");
