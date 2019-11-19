@@ -32,7 +32,7 @@ namespace ConsoleApp1
                         Temp_to_File[h] = (First_value1 + h).ToString() + "\t\t" + (First_value2 + Step * h).ToString();
                     }
                       
-
+                   
                       using (StreamWriter streamWriter = new StreamWriter("result.txt", true))
                       {
                         for (int i1 = 0; i1 < 10; i1++)
@@ -41,7 +41,7 @@ namespace ConsoleApp1
                       Start++;
                     }
               }
-        
+       
           using (StreamWriter streamWriter = new StreamWriter("result.txt", true))
             streamWriter.WriteLine(File.ReadLines("in.txt").Skip(Lines_count - 1).Take(1).First());
             Console.WriteLine("Enter the value for search or exit to end program");
