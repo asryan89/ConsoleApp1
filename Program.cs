@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Linq;
 
+// Rename to meanningfull word 
 namespace ConsoleApp1
 {
     internal class Program
@@ -82,6 +83,7 @@ namespace ConsoleApp1
                 }
                 else
                 {
+                    // use $ for string concatination
                     Console.WriteLine("Plesae enter value from \t" +
                         float.Parse(File.ReadLines("result.txt").Skip(0).Take(1).First().Split(new char[] { ' ', ',', '.', ':', '\t' }, StringSplitOptions.RemoveEmptyEntries)[0]) + "\tto \t" +
                         float.Parse(File.ReadLines("result.txt").Skip(Lines_count1 - 1).Take(1).First().Split(new char[] { ' ', ',', '.', ':', '\t' }, StringSplitOptions.RemoveEmptyEntries)[0]));
@@ -91,8 +93,6 @@ namespace ConsoleApp1
 
 
             }
-
-
         }
     }
 }
