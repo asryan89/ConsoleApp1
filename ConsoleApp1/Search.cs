@@ -14,7 +14,7 @@ namespace ConsoleApp1
            
             
             
-            var lines = File.ReadAllLines("result.txt");
+            var lines = File.ReadAllLines("Output/result.txt");
             Console.WriteLine("Enter the value for search or exit to end program");
             var srch_value = Console.ReadLine();
             while (srch_value != "Exit" && srch_value != "exit")

@@ -13,7 +13,7 @@ namespace ConsoleApp1
 
         public static void Read_File()
         {
-            var lines = File.ReadAllLines("in.txt");
+            var lines = File.ReadAllLines("Input/in.txt");
             foreach (var item in lines)
             {
                 file_lines.Add(item.Split(new char[] { ' ', ',', '.', ':', '\t' }, StringSplitOptions.RemoveEmptyEntries));
@@ -23,7 +23,7 @@ namespace ConsoleApp1
 
         public static void Write_File(List<string> res) {
            
-            using (StreamWriter streamWriter = new StreamWriter("result.txt", false))
+            using (StreamWriter streamWriter = new StreamWriter("Output/result.txt", false))
             {
                 foreach (var item in res)
                 {
