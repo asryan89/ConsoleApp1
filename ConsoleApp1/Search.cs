@@ -13,9 +13,10 @@ namespace ConsoleApp1
         {
            
             
-            
+            // read path from configuration appsettings.json
             var lines = File.ReadAllLines("Output/result.txt");
             Console.WriteLine("Enter the value for search or exit to end program");
+            // use full naming search instead srch, it is more readable
             var srch_value = Console.ReadLine();
             while (srch_value != "Exit" && srch_value != "exit")
             {
